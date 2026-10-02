@@ -1,6 +1,6 @@
 # Day 001 — BERT tokenizer walkthrough
 
-`main.py` loads the `bert-base-uncased` tokenizer and walks one line of text through the usual Hugging Face steps: split into tokens, map those tokens to vocabulary IDs, encode the full sentence as a PyTorch tensor (including special tokens), decode that tensor back to text, then turn the IDs back into tokens.
+`src/day_001/main.py` loads the `bert-base-uncased` tokenizer and walks one line of text through the usual Hugging Face steps: split into tokens, map those tokens to vocabulary IDs, encode the full sentence as a PyTorch tensor (including special tokens), decode that tensor back to text, then turn the IDs back into tokens.
 
 ## What it does
 
@@ -14,23 +14,20 @@
 
 `tokenize` does not add special tokens. `encode` does, so the decoded line is wrapped as `[CLS] ... [SEP]`.
 
-## Requirements
+## Setup
 
-- Python 3.10+
-- Packages in `requirements.txt`: [transformers](https://huggingface.co/docs/transformers) with the `torch` extra, which installs [PyTorch](https://pytorch.org/) (`encode` returns a `torch.Tensor`)
+Python 3.12 or newer, and [uv](https://docs.astral.sh/uv/). Dependencies live in `pyproject.toml` and are locked in `uv.lock`. The `torch` extra of `transformers` installs PyTorch, which `encode` needs to return a tensor.
 
 From this folder:
 
 ```bash
-uv pip install -r requirements.txt
+uv sync
 ```
 
 ## Run
 
-From this folder:
-
 ```bash
-python main.py
+uv run python src/day_001/main.py
 ```
 
 Example:

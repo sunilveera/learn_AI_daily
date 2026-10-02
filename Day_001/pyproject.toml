@@ -1,0 +1,19 @@
+[project]
+name = "day-001"
+version = "0.1.0"
+description = "Walk a sentence through the BERT tokenizer"
+readme = "README.md"
+authors = [
+    { name = "Sunil Veeramachaneni", email = "sunil.veera@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "transformers[torch]>=5.18.0",
+]
+
+[project.scripts]
+day-001 = "day_001:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
