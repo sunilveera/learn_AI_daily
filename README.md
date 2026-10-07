@@ -12,6 +12,7 @@ Each day is its own folder and its own [uv](https://docs.astral.sh/uv/) project.
 | [Day 004](Day_004/README.md) | One transformer block: attention, residual connections, layer norm, and a small feed-forward network. | `uv run python src/day_004/main.py` |
 | [Day 005](Day_005/README.md) | Next-token prediction with `distilgpt2`: the top 5 candidates, then a 10-token greedy continuation. | `uv run python src/day_005/top5.py` |
 | [Day 006](Day_006/README.md) | Sample the next token with temperature, top-k, and top-p, then compare three settings on one prompt. | `uv run python src/day_006/main.py` |
+| [Day 007](Day_007/README.md) | Add sinusoidal positional encodings to a token embedding so identical tokens at different positions stay distinct. | `uv run python src/day_007/main.py` |
 
 Days 001, 002, 005, and 006 download a Hugging Face model or tokenizer the first time they run.
 
