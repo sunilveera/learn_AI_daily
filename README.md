@@ -14,6 +14,7 @@ Each day is its own folder and its own [uv](https://docs.astral.sh/uv/) project.
 | [Day 006](Day_006/README.md) | Sample the next token with temperature, top-k, and top-p, then compare three settings on one prompt. | `uv run python src/day_006/main.py` |
 | [Day 007](Day_007/README.md) | Add sinusoidal positional encodings to a token embedding so identical tokens at different positions stay distinct. | `uv run python src/day_007/main.py` |
 | [Day 008](Day_008/README.md) | Run two attention heads, concatenate them, and project the result back to the model width. | `uv run python src/day_008/main.py` |
+| [Day 009](Day_009/README.md) | Compare encoder self-attention, causal decoder attention, and cross-attention from decoder queries onto encoder keys. | `uv run python src/day_009/main.py` |
 
 Days 001, 002, 005, and 006 download a Hugging Face model or tokenizer the first time they run.
 
