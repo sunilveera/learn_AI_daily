@@ -34,7 +34,6 @@ def cross_entropy_loss(softmax_logits, target_id):
     predicted_probability = softmax_logits[target_id]
     predicted_probability = np.clip(predicted_probability, 1e-12, 1.0)
     # Calculate the negative natural logarithm using NumPy.
-    # avoiding log(0) in extreme numerical cases.
     loss = -np.log(predicted_probability)
     return loss
 

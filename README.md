@@ -17,6 +17,7 @@ Each day is its own folder and its own [uv](https://docs.astral.sh/uv/) project.
 | [Day 009](Day_009/README.md) | Compare encoder self-attention, causal decoder attention, and cross-attention from decoder queries onto encoder keys. | `uv run python src/day_009/main.py` |
 | [Day 010](Day_010/README.md) | Run one untrained decoder block on `the cat` and print a next-token distribution over a 10-word vocabulary. | `uv run python src/day_010/main.py` |
 | [Day 011](Day_011/README.md) | Train one weight matrix with cross-entropy and gradient descent so a fixed vector predicts `sleeps`. | `uv run python src/day_011/main.py` |
+| [Day 012](Day_012/README.md) | Backpropagate through a ReLU hidden layer and train both weight matrices to predict `sleeps`. | `uv run python src/day_012/main.py` |
 
 Days 001, 002, 005, and 006 download a Hugging Face model or tokenizer the first time they run.
 
