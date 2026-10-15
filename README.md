@@ -19,6 +19,7 @@ Each day is its own folder and its own [uv](https://docs.astral.sh/uv/) project.
 | [Day 011](Day_011/README.md) | Train one weight matrix with cross-entropy and gradient descent so a fixed vector predicts `sleeps`. | `uv run python src/day_011/main.py` |
 | [Day 012](Day_012/README.md) | Backpropagate through a ReLU hidden layer and train both weight matrices to predict `sleeps`. | `uv run python src/day_012/main.py` |
 | [Day 013](Day_013/README.md) | Minimize `(w - 3)²` with SGD, momentum, and Adam, and plot the three loss curves. | `uv run python src/day_013/main.py` |
+| [Day 014](Day_014/README.md) | Compare constant, step-decay, and cosine learning rates while momentum minimizes `(w - 3)²`. | `uv run python src/day_014/main.py` |
 
 Days 001, 002, 005, and 006 download a Hugging Face model or tokenizer the first time they run.
 
