@@ -21,6 +21,7 @@ Each day is its own folder and its own [uv](https://docs.astral.sh/uv/) project.
 | [Day 013](Day_013/README.md) | Minimize `(w - 3)²` with SGD, momentum, and Adam, and plot the three loss curves. | `uv run python src/day_013/main.py` |
 | [Day 014](Day_014/README.md) | Compare constant, step-decay, and cosine learning rates while momentum minimizes `(w - 3)²`. | `uv run python src/day_014/main.py` |
 | [Day 015](Day_015/README.md) | Fit a noisy sine with polynomials and compare L2 penalties on a degree-12 model. | `uv run python src/day_015/main.py` |
+| [Day 016](Day_016/README.md) | Compare mini-batch sizes, and show that accumulating four micro-batches matches one larger batch. | `uv run python src/day_016/main.py` |
 
 Days 001, 002, 005, and 006 download a Hugging Face model or tokenizer the first time they run.
 
