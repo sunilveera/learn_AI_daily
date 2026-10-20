@@ -13,7 +13,6 @@ true_slope = 2.0
 true_intercept = 1.0
 true_noise = 0.3
 
-# generate y values with a quadratic function
 noise = np.random.normal(0, true_noise, training_samples)
 y = true_slope * X + true_intercept + noise
 
