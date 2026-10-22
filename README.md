@@ -24,6 +24,7 @@ Each day is its own folder and its own [uv](https://docs.astral.sh/uv/) project.
 | [Day 016](Day_016/README.md) | Compare mini-batch sizes, and show that accumulating four micro-batches matches one larger batch. | `uv run python src/day_016/main.py` |
 | [Day 017](Day_017/README.md) | Compare no clipping, value clipping, and global-norm clipping while fitting a line with large inputs. | `uv run python src/day_017/main.py` |
 | [Day 018](Day_018/README.md) | Train the same ReLU network from default, Xavier, and He initialization and compare the loss curves. | `uv run python src/day_018/main.py` |
+| [Day 019](Day_019/README.md) | Fit a noisy sine wave, save the weights with the lowest validation loss, and score them on a held-out test set. | `uv run python src/day_019/main.py` |
 
 Days 001, 002, 005, and 006 download a Hugging Face model or tokenizer the first time they run.
 
